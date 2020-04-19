@@ -9,6 +9,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 
 public class LoginEndpointTest extends BaseResourceTest {
+    @Disabled
     @Test
     public void testLogin_with_incorrect_password() {
         String payload ="{\"username\":\"user\",\"password\":\"blablabla\"}";
